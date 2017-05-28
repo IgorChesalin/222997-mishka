@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class="Page-header">
+    <div class="Page-header__logo">
+      <img src="http://placehold.it/86x35" alt="Mishka">
+    </div>
+    <nav class="main-nav">
+      <span class="main-nav__toggler"></span>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="order">
+    <h1 class="order-title">Вязание на заказ</h1>
+    <p class="order__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простуюформу заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+  </section>
+
+  <section class="order-form">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="order-form__type">
+        <h2 class="order-form__title">ТИП</h2>
+        <input type="checkbox" name="accessory">
+        <label for="accessory">Аксессуар для интерьера</label>
+        <input type="checkbox" name="toy">
+        <label for="toy">Детская игрушка</label>
+      </div>
+
+      <div class="order-form__color">
+        <h2 class="order-form__title">ТИП</h2>
+        <input type="checkbox" name="white">
+        <label for="white">Белый</label>
+        <input type="checkbox" name="grey">
+        <label for="grey">Серый</label>
+        <input type="checkbox" name="tiffany">
+        <label for="tiffany">"Тиффани"</label>
+        <input type="checkbox" name="black">
+        <label for="black">Черный</label>
+        <input type="checkbox" name="pink">
+        <label for="pink">Розовый</label>
+        <input type="checkbox" name="orange">
+        <label for="orange">Оранжевый</label>
+      </div>
+
+      <div class="order-form__client">
+        <h2 class="order-form__title">ФИО</h2>
+        <label for="firstname">Имя:</label>
+        <input type="text" name="firstname" placeholder="Введите ваше имя*" required>
+        <label for="secondname">Фамилия:</label>
+        <input type="text" name="secondname" placeholder="Укажите фамилию*" required>
+        <label for="thirdname">Отчество:</label>
+        <input type="text" name="thirdname" placeholder="Отчество, если желаете*">
+      </div>
+
+      <div class="order-form__mobile">
+        <label for="mobile">ТЕЛ</label>
+        <input type="text" name="mobile" placeholder="+7 XXX XX XX*" required>
+        <div class="order-form__mobile-logo">
+          <img src="http://placehold.it/30x30" alt="mobile">
+        </div>
+      </div>
+
+      <div class="order-form__email">
+        <label for="email">E-MAIL</label>
+        <input type="text" name="email" placeholder="Ваш Email*" required>
+        <div class="order-form__email-logo">
+          <img src="http://placehold.it/30x30" alt="email">
+        </div>
+      </div>
+
+      <div class="order-form__addition">
+        <h2 class="order-form__title">ДОП</h2>
+        <textarea name="addition" id="addition-field" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </div>
+      <p class="order-form__rules">*Поля обязательные для заполнения</p>
+
+      <div class="order-form__btn">
+        <input type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+      </div>
+    </form>
+  </section>
+
+  <footer class="page-footer">
+    <div class="page-footer__social">
+      <div class="page-footer__social-in">
+        <img src="http://placehold.it/32x32" alt="instagram">
+      </div>
+      <div class="page-footer__social-fb">
+        <img src="http://placehold.it/32x32" alt="Facebook">
+      </div>
+      <div class="page-footer__social-tw">
+        <img src="http://placehold.it/32x32" alt="Twitter">
+      </div>
+    </div>
+    <div class="page-footer__developer">
+      <span>Разработано</span>
+      <a href="http://htmlacademy.ru/"><img src="http://placehold.it/30x36" alt="academy-logo"></a>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
