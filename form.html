@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__logo">
+      <img src="http://placehold.it/86x35" alt="Mishka">
+    </div>
+    <nav class="main-nav">
+      <div class="main-nav__toggler">
+        <a href="#" class="main-nav__toggle main-nav__toggle--burger"></a>
+        <a href="#" class="main-nav__toggle main-nav__toggle--cross"></a>
+      </div>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="order">
+    <h1 class="order__title">Вязание на заказ</h1>
+    <p class="order__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простуюформу заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+  </section>
+
+  <section class="order-form">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="order-form__type">
+
+        <h2 class="order-form__title">ТИП</h2>
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" name="accessory">
+          <label class="checkbox-label" for="accessory">Аксессуар для интерьера</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" name="toy">
+          <label class="label-checkbox" for="toy">Детская игрушка</label>
+        </div>
+      </div>
+
+      <div class="order-form__color">
+        <h2 class="order-form__title">ЦВЕТ</h2>
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="white">
+          <label class="checkbox__label" for="white">Белый</label>
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="grey">
+          <label class="checkbox__label" for="grey">Серый</label>
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="tiffany">
+          <label class="checkbox__label" for="tiffany">"Тиффани"</label>
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="black">
+          <label class="checkbox__label" for="black">Черный</label>
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="pink">
+          <label class="checkbox__label" for="pink">Розовый</label>
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="orange">
+          <label class="checkbox__label" for="orange">Оранжевый</label></div>
+      </div>
+
+      <div class="order-form__client">
+        <h2 class="order-form__title">ФИО</h2>
+
+        <div class="input-field">
+          <label class="input-field__label" for="firstname">Имя:</label>
+          <input class="input-field__field" type="text" name="firstname" placeholder="Введите ваше имя*" required>
+        </div>
+
+        <div class="input-field">
+          <label class="input-field__label" for="secondname">Фамилия:</label>
+          <input class="input-field__field" type="text" name="secondname" placeholder="Укажите фамилию*" required>
+        </div>
+
+        <div class="input-field">
+          <label class="input-field__label" for="thirdname">Отчество:</label>
+          <input class="input-field__field" type="text" name="thirdname" placeholder="Отчество, если желаете*">
+        </div>
+
+      </div>
+
+      <div class="order-form__mobile">
+        <label for="mobile">ТЕЛ</label>
+
+        <div class="input-field">
+          <input type="text" name="mobile" placeholder="+7 XXX XX XX*" required>
+        </div>
+
+        <div class="order-form__mobile-logo">
+          <img src="http://placehold.it/30x30" alt="mobile">
+        </div>
+      </div>
+
+      <div class="order-form__email">
+        <label for="email">E-MAIL</label>
+
+        <div class="input-field">
+          <input type="text" name="email" placeholder="Ваш Email*" required>
+        </div>
+
+        <div class="order-form__email-logo">
+          <img src="http://placehold.it/30x30" alt="email">
+        </div>
+      </div>
+
+      <div class="order-form__addition">
+        <h2 class="order-form__title">ДОП</h2>
+        <textarea name="addition" id="addition-field" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </div>
+      <p class="order-form__rules"><sup>*</sup>Поля обязательные для заполнения</p>
+
+      <div class="order-form__btn">
+        <input class="input-checkbox" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__social">
+      <div class="social__item social__item--in">
+        <img src="http://placehold.it/32x32" alt="instagram">
+      </div>
+      <div class="social__item social__item--fb">
+        <img src="http://placehold.it/32x32" alt="Facebook">
+      </div>
+      <div class="social__item social__item--tw">
+        <img src="http://placehold.it/32x32" alt="Twitter">
+      </div>
+    </div>
+    <div class="footer__developer">
+      <span>Разработано</span>
+      <a href="http://htmlacademy.ru/"><img src="http://placehold.it/30x36" alt="academy-logo"></a>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
