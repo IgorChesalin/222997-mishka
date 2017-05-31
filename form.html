@@ -7,15 +7,18 @@
 </head>
 
 <body>
-  <header class="Page-header">
-    <div class="Page-header__logo">
+  <header class="page-header">
+    <div class="page-header__logo">
       <img src="http://placehold.it/86x35" alt="Mishka">
     </div>
     <nav class="main-nav">
-      <span class="main-nav__toggler"></span>
+      <div class="main-nav__toggler">
+        <a href="#" class="main-nav__toggle main-nav__toggle--burger"></a>
+        <a href="#" class="main-nav__toggle main-nav__toggle--cross"></a>
+      </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
           <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
           <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
@@ -25,44 +28,69 @@
   </header>
 
   <section class="order">
-    <h1 class="order-title">Вязание на заказ</h1>
+    <h1 class="order__title">Вязание на заказ</h1>
     <p class="order__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простуюформу заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
   </section>
 
   <section class="order-form">
     <form action="https://echo.htmlacademy.ru" method="post">
       <div class="order-form__type">
+
         <h2 class="order-form__title">ТИП</h2>
-        <input type="checkbox" name="accessory">
-        <label for="accessory">Аксессуар для интерьера</label>
-        <input type="checkbox" name="toy">
-        <label for="toy">Детская игрушка</label>
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" name="accessory">
+          <label class="checkbox-label" for="accessory">Аксессуар для интерьера</label>
+        </div>
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" name="toy">
+          <label class="label-checkbox" for="toy">Детская игрушка</label>
+        </div>
       </div>
 
       <div class="order-form__color">
-        <h2 class="order-form__title">ТИП</h2>
-        <input type="checkbox" name="white">
-        <label for="white">Белый</label>
-        <input type="checkbox" name="grey">
-        <label for="grey">Серый</label>
-        <input type="checkbox" name="tiffany">
-        <label for="tiffany">"Тиффани"</label>
-        <input type="checkbox" name="black">
-        <label for="black">Черный</label>
-        <input type="checkbox" name="pink">
-        <label for="pink">Розовый</label>
-        <input type="checkbox" name="orange">
-        <label for="orange">Оранжевый</label>
+        <h2 class="order-form__title">ЦВЕТ</h2>
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" name="white">
+          <label class="checkbox-label" for="white">Белый</label>
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" name="grey">
+          <label class="checkbox-label" for="grey">Серый</label>
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" name="tiffany">
+          <label class="checkbox-label" for="tiffany">"Тиффани"</label>
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" name="black">
+          <label class="checkbox-label" for="black">Черный</label>
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" name="pink">
+          <label class="checkbox-label" for="pink">Розовый</label>
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox-input" type="checkbox" name="orange">
+          <label class="checkbox-label" for="orange">Оранжевый</label></div>
       </div>
 
       <div class="order-form__client">
         <h2 class="order-form__title">ФИО</h2>
+
         <label for="firstname">Имя:</label>
         <input type="text" name="firstname" placeholder="Введите ваше имя*" required>
+
         <label for="secondname">Фамилия:</label>
         <input type="text" name="secondname" placeholder="Укажите фамилию*" required>
+
         <label for="thirdname">Отчество:</label>
         <input type="text" name="thirdname" placeholder="Отчество, если желаете*">
+
       </div>
 
       <div class="order-form__mobile">
@@ -88,24 +116,24 @@
       <p class="order-form__rules">*Поля обязательные для заполнения</p>
 
       <div class="order-form__btn">
-        <input type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+        <input class="input-checkbox" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
       </div>
     </form>
   </section>
 
-  <footer class="page-footer">
-    <div class="page-footer__social">
-      <div class="page-footer__social-in">
+  <footer class="footer">
+    <div class="footer__social">
+      <div class="social__item social__item--in">
         <img src="http://placehold.it/32x32" alt="instagram">
       </div>
-      <div class="page-footer__social-fb">
+      <div class="social__item social__item--fb">
         <img src="http://placehold.it/32x32" alt="Facebook">
       </div>
-      <div class="page-footer__social-tw">
+      <div class="social__item social__item--tw">
         <img src="http://placehold.it/32x32" alt="Twitter">
       </div>
     </div>
-    <div class="page-footer__developer">
+    <div class="footer__developer">
       <span>Разработано</span>
       <a href="http://htmlacademy.ru/"><img src="http://placehold.it/30x36" alt="academy-logo"></a>
     </div>
