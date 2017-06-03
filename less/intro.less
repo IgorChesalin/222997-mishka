@@ -1,14 +1,19 @@
+@black: #010000;
+@white: #ffffff;
+@bg-light: #63d1bb;
+@bg-dark: #56c3b2;
+
 .intro {
   h1 {
     font-size: 27px;
     font-weight: bold;
     line-height: 30px;
+    color: @black;
     }
 }
 
 .intro__item {
     display: block;
-    // width: 320px;
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -16,13 +21,13 @@
     font-size: 19px;
     font-weight: bold;
     line-height: 24px;
-    color: #ffffff;
+    color: @white;
     text-decoration: none;
   }
   &--light {
-    background-color: #63d1bb;
+    background-color: @bg-light;
   }
   &--dark {
-    background-color: #56c3b2;
+    background-color: @bg-dark;
   }
 }
