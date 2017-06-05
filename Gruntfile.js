@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-less");
   grunt.loadNpmTasks("grunt-browser-sync");
   grunt.loadNpmTasks("grunt-contrib-watch");
@@ -18,11 +18,7 @@ module.exports = function(grunt) {
     postcss: {
       style: {
         options: {
-          processors: [
-            require("autoprefixer")({browsers: [
-              "last 2 versions"
-            ]})
-          ]
+          processors: [require("autoprefixer")({browsers: ["last 2 versions"]})]
         },
         src: "css/*.css"
       }
@@ -31,10 +27,7 @@ module.exports = function(grunt) {
     browserSync: {
       server: {
         bsFiles: {
-          src: [
-            "*.html",
-            "css/*.css"
-          ]
+          src: ["*.html", "css/*.css"]
         },
         options: {
           server: ".",
