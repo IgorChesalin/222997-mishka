@@ -4,6 +4,7 @@
 }
 
 .promo-item {
+  position: relative;
   h2 {
     color: @black;
     font-size: 25px;
@@ -22,6 +23,7 @@
     font-size: 15px;
     font-weight: normal;
     line-height: 24px;
+    margin: 0;
   }
   table {
     color: @charcoal;
@@ -32,11 +34,11 @@
 }
 
 .promo-item__image {
-  padding-left: 30px;
+  // padding-left: 30px;
 }
 
 .promo-item__price {
-  width: 100%;
+  // width: 100%;
   text-align: center;
   color: @charcoal;
   font-size: 17px;
@@ -45,7 +47,7 @@
 }
 
 .promo-item__btn {
-  width: 100%;
+  // width: 100%;
 text-align: center;
   a {
     color: @charcoal;
@@ -57,15 +59,34 @@ text-align: center;
 }
 
 @media @tablet-widths {
-  .promo-item__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  h2 {
-    width: 70%;
-  }
-  span {
-    width: 30%;
-  }
+ .promo-item__title {
+   width: 70%;
+ }
+ .promo-item__week {
+   width: 30%;
+   text-align: right;
+ }
+ .promo-item__descr {
+   width: 100%;
+   padding-right: 380px;
+ }
+ .promo-item__options {
+   width: 100%;
+   margin-bottom: 50px;
+ }
+ .promo-item__image {
+   width: 100%;
+  //  position: absolute;
+  //  top: 48px;
+  //  left: 480px;
+ }
+ .promo-item__price {
+   width: 100%;
+   text-align: left;
+   margin-bottom: 30px;
+ }
+ .promo-item__btn {
+   width: 100%;
+   text-align: left;
+ }
 }

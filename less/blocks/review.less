@@ -1,15 +1,23 @@
+.review__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .review {
   h2 {
     color: @black;
     font-size: 25px;
     font-weight: bold;
     line-height: 30px;
+    margin: 0;
   }
   p {
     color: @charcoal;
     font-size: 15px;
     font-weight: normal;
     line-height: 30px;
+    margin: 0;
+    margin-bottom: 5px;
   }
 }
 
@@ -35,4 +43,18 @@
     line-height: 20px;
     text-decoration: none;
   }
+}
+
+@media @tablet-widths {
+  .review__container {
+    h2 {
+      order: -2;
+      width: 70%;
+    }
+    .review__btn {
+      order: -1;
+      width: 30%;
+    }
+  }
+
 }
