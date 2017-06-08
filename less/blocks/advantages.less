@@ -1,5 +1,6 @@
 .advantages__container {
   .container();
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -11,7 +12,12 @@
     font-size: 25px;
     font-weight: bold;
     line-height: 30px;
+    @media @tablet-widths {
+      font-size: 43px;
+      line-height: 50px;
+    }
   }
+
   li {
     color: @black;
     font-size: 17px;
@@ -19,18 +25,8 @@
     line-height: 20px;
     list-style: none;
     margin-bottom: 10px;
-  }
-}
-
-@media @tablet-widths {
-  .advantages__container {
-    h2 {
-      font-size: 43px;
-      line-height: 50px;
-    }
-    li {
+    @media @tablet-widths {
       width: 50%;
     }
   }
-
 }

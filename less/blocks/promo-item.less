@@ -7,50 +7,77 @@
 
 .promo-item {
   position: relative;
-  h2 {
-    color: @black;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 30px;
-    margin: 0px;
+}
+
+.promo-item__title {
+  color: @black;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0px;
+  @media @tablet-widths {
+    width: 70%;
   }
-  span {
-    color: @blue;
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 20px;
-  }
-  p {
-    color: @charcoal;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 24px;
-    margin: 0;
-  }
-  table {
-    color: @charcoal;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 20px;
+}
+
+.promo-item__week {
+  color: @blue;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  @media @tablet-widths {
+    width: 30%;
+    text-align: right;
+   }
+}
+
+.promo-item__descr {
+  color: @charcoal;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0;
+  @media @tablet-widths {
+    width: 100%;
+    padding-right: 380px;
+   }
+}
+
+.promo-item__options {
+  color: @charcoal;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
+  @media @tablet-widths {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
 .promo-item__image {
-  // padding-left: 30px;
+  @media @tablet-widths {
+    width: 40%;
+    position: absolute;
+    left: 60%;
+    bottom: -25%;
+  }
 }
 
 .promo-item__price {
-  // width: 100%;
   text-align: center;
   color: @charcoal;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
+  @media @tablet-widths {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+   }
 }
 
 .promo-item__btn {
-  // width: 100%;
-text-align: center;
+  text-align: center;
   a {
     color: @charcoal;
     font-size: 17px;
@@ -61,32 +88,6 @@ text-align: center;
 }
 
 @media @tablet-widths {
- .promo-item__title {
-   width: 70%;
- }
- .promo-item__week {
-   width: 30%;
-   text-align: right;
- }
- .promo-item__descr {
-   width: 100%;
-   padding-right: 380px;
- }
- .promo-item__options {
-   width: 100%;
-   margin-bottom: 50px;
- }
- .promo-item__image {
-   width: 40%;
-   position: absolute;
-   left: 60%;
-   bottom: -25%;
- }
- .promo-item__price {
-   width: 100%;
-   text-align: left;
-   margin-bottom: 30px;
- }
  .promo-item__btn {
    width: 100%;
    text-align: left;
