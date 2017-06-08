@@ -1,9 +1,16 @@
+.contacts__container {
+  .container();
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contacts {
   font-size: 15px;
   font-weight: normal;
   color: @charcoal;
   line-height: 30px;
 }
+
 
 .contacts__btn {
   a {
@@ -12,5 +19,22 @@
     font-weight: bold;
     line-height: 20px;
     text-decoration: none;
+  }
+}
+
+@media @tablet-widths {
+  .contacts__email {
+    width: 50%;
+  }
+  .contacts__address {
+    width: 50%;
+  }
+  .contacts__map {
+    width: 100%;
+    text-align: center;
+  }
+  .contacts__btn {
+    width: 100%;
+    text-align: center;
   }
 }

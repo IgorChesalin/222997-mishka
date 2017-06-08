@@ -101,10 +101,14 @@
       <h2>Отзывы</h2>
       <div class="review__slider-wrapper">
         <p class="review__text">Я молодая мама, но всё равно фотографии не набиралии близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а так же набирают больше лайков!</p>
-        <span class="review__author">Анастасия Красильникова</span>
-        <span class="review__author-nickname">@misssssiskras</span>
-        <button class="review__prev">НАЗАД</button>
-        <button class="review__next">ВПЕРЕД</button>
+        <div class="review__author--wrapper">
+          <span class="review__author">Анастасия Красильникова</span>
+          <span class="review__author-nickname">@misssssiskras</span>
+        </div>
+        <div class="review__btn--wrapper">
+          <button class="review__prev">НАЗАД</button>
+          <button class="review__next">ВПЕРЕД</button>
+        </div>
       </div>
 
       <div class="review__btn">
@@ -114,40 +118,44 @@
   </section>
 
   <section class="contacts">
+    <div class="contacts__container">
+      <div class="contacts__email">
+        <span>email:</span>
+        <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+      </div>
 
-    <div class="contacts__email">
-      <span>email:</span>
-      <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-    </div>
+      <div class="contacts__address">
+        <span>адрес:</span>
+        <span>г. Санкт-Петербург, ул. Большая Конюшенная, д 19/8, офис 101</span>
+      </div>
 
-    <div class="contacts__address">
-      <span>адрес:</span>
-      <span>г. Санкт-Петербург, ул. Большая Конюшенная, д 19/8, офис 101</span>
-    </div>
-
-    <div class="contacts__map">
-      <img src="img/map-mobile@1x.jpg" alt="map">
-    </div>
-    <div class="contacts__btn">
-      <a href="#">НАПИШИТЕ НАМ</a>
+      <div class="contacts__map">
+        <img src="img/map-mobile@1x.jpg" alt="map">
+      </div>
+      <div class="contacts__btn">
+        <a href="#">НАПИШИТЕ НАМ</a>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="footer__social">
-      <div class="social__item social__item--in">
-        <img src="img/icon-insta.svg" alt="instagram">
+    <div class="footer__container">
+      <div class="footer__social">
+        <div class="social__item social__item--in">
+          <img src="img/icon-insta.svg" alt="instagram">
+        </div>
+        <div class="social__item social__item--fb">
+          <img src="img/icon-fb.svg" alt="Facebook">
+        </div>
+        <div class="social__item social__item--tw">
+          <img src="img/icon-twitter.svg" alt="Twitter">
+        </div>
       </div>
-      <div class="social__item social__item--fb">
-        <img src="img/icon-fb.svg" alt="Facebook">
+
+      <div class="footer__developer">
+        <span>Разработано</span>
+        <a href="http://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="academy-logo"></a>
       </div>
-      <div class="social__item social__item--tw">
-        <img src="img/icon-twitter.svg" alt="Twitter">
-      </div>
-    </div>
-    <div class="footer__developer">
-      <span>Разработано</span>
-      <a href="http://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="academy-logo"></a>
     </div>
   </footer>
 

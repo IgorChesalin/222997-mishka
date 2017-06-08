@@ -1,6 +1,11 @@
 .review__container {
+  .container();
   display: flex;
   flex-wrap: wrap;
+}
+
+.review__slider-wrapper {
+  position: relative;
 }
 
 .review {
@@ -20,7 +25,6 @@
     margin-bottom: 5px;
   }
 }
-
 .review__author {
   color: @black;
   font-size: 17px;
@@ -56,5 +60,15 @@
       width: 30%;
     }
   }
+  .review__author--wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    }
+  .review__btn--wrapper {
+    position: absolute;
+    left: 75%;
+    bottom: 15%;
+  }
 
-}
+  }
