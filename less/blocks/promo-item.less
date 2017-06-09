@@ -18,6 +18,9 @@
   @media @tablet-widths {
     width: 70%;
   }
+  @media @desktop-widths {
+    order: -1;
+  }
 }
 
 .promo-item__week {
@@ -28,6 +31,12 @@
   @media @tablet-widths {
     width: 30%;
     text-align: right;
+   }
+   @media @desktop-widths {
+     order: -2;
+     margin-left: -175px;
+     text-align: center;
+     width: 175px;
    }
 }
 
@@ -78,6 +87,10 @@
 
 .promo-item__btn {
   text-align: center;
+  @media @tablet-widths {
+    width: 100%;
+    text-align: left;
+  }
   a {
     color: @charcoal;
     font-size: 17px;
@@ -85,11 +98,4 @@
     line-height: 20px;
     text-decoration: none;
   }
-}
-
-@media @tablet-widths {
- .promo-item__btn {
-   width: 100%;
-   text-align: left;
- }
 }

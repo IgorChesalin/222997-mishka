@@ -11,6 +11,27 @@
   line-height: 30px;
 }
 
+.contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media @tablet-widths {
+    display: flex;
+  }
+  @media @desktop-widths {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+.contacts__map-wrapper {
+  @media @desktop-widths {
+    width: 50%;
+  }
+}
+
 .contacts__email {
   @media @tablet-widths {
     width: 50%;
@@ -32,6 +53,9 @@
 
 
 .contacts__btn {
+  @media @desktop-widths {
+
+    }
   a {
     font-size: 18px;
     color: @charcoal;
